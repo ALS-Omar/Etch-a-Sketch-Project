@@ -1,18 +1,23 @@
 body{
     background-color: gray;
+    display: flex;
+    flex-direction: column;
 }
 #container{
+    margin-left: 300px;
     display: flex;
-    justify-content: center ;
-    align-items: center;
-    width: 600x;
+    justify-content: flex-start ;
+    align-items: flex-start;
+    width: 600px;
     height: 600px;
     flex-wrap: wrap;
+    gap: 1px; 
+    overflow: auto;
 }
 .grid-itm{
-    border:2px solid black;
+    flex:1 ;
+    border:1px solid black;
     background-color: white;
-    width: 60px;
-    height: 60px;
-    gap:10px
+    height: 30px;
+    
 }

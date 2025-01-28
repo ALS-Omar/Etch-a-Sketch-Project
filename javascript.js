@@ -41,12 +41,10 @@ black.addEventListener("click",()=>{
 })
 
 grid.addEventListener("click",()=>{
-    prompt("Enter the value for your grid(Between 0 and 100)")
-})
-
-
-
-for(let i =0;i<16*16;i++){
+    let value=prompt("Enter the value for your grid(Between 0 and 100)");
+    while(container.firstChild)
+    container.removeChild(container.firstChild);
+for(let i =0;i<value*value;i++){
 const div=document.createElement("div");
 div.classList.add("grid-itm");
 container.appendChild(div);
@@ -70,6 +68,10 @@ console.log("div created");
     }   
 })
 }
+
+})
+
+
 
 function getRandomRGBColor() {
     const r = Math.floor(Math.random() * 256); // Random red value between 0 and 255
