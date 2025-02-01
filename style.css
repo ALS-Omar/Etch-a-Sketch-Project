@@ -1,5 +1,5 @@
 body{
-    background-color: gray;
+    background-color: white;
     display: flex;
     flex-direction: column;
 }
@@ -9,15 +9,11 @@ body{
     justify-content: flex-start ;
     align-items: flex-start;
     width: 600px;
-    height: 600px;
     flex-wrap: wrap;
-    gap: 1px; 
     overflow: auto;
+    margin-bottom: 20px;
 }
-.grid-itm{
-    flex:1 ;
+.grid-row{
     border:1px solid black;
     background-color: white;
-    height: 30px;
-    
 }
